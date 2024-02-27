@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import type { Preview } from '@storybook/react';
-import { ToDoListContextProvider } from '../src/contexts/ToDoList';
+import { TodoProvider } from '../src/contexts/ToDoList';
 
 import React from 'react';
 
@@ -16,11 +16,9 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <ToDoListContextProvider>
-      <BrowserRouter>
+      <TodoProvider>
         <Story />
-        </BrowserRouter>
-      </ToDoListContextProvider>
+      </TodoProvider>
     ),
   ],
 };

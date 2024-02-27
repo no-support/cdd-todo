@@ -11,6 +11,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    value: '리액트 공부하기',
+    value: 'value',
   },
 };

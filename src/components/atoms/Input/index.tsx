@@ -15,4 +15,7 @@ interface Props {
 const TextInput = styled.input`
   font-size: 1.2rem;
   padding: 8px;
+  border-radius: 4px;
+  width: 400px;
+  margin: 0 10px;
 `

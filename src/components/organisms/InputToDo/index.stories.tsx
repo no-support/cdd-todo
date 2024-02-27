@@ -12,7 +12,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    label: '리액트 공부하기',
+    label: 'label',
   },
 };
 

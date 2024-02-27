@@ -1,21 +1,17 @@
 import { Button } from "components/atoms/Button"
 import { Input } from "components/atoms/Input"
-import { ToDoListContext } from "contexts/ToDoList"
-import { useContext, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useToDoDispatch } from "hooks/toDo"
+import { useState } from "react"
 import styled from "styled-components"
 
 export const InputTodo = () => {
   const [toDo, setToDo] = useState('');
-  const { onAdd } = useContext(ToDoListContext);
-  const navigate = useNavigate();
+  const { onAdd } = useToDoDispatch();
 
   const onAddTodo = () => {
     if (toDo === '') return;
-
     onAdd(toDo);
     setToDo('');
-    navigate('/');
   }
 
   return <Container>

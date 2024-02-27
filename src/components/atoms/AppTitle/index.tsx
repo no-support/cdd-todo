@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom"
-
 import styled from "styled-components"
 
 export const AppTitle = () => {
-  return <Container to="/">할일목록앱</Container>
+  return <Container>To do</Container>
 }
 
-const Container = styled(Link)`
+const Container = styled.div`
   color: #fff;
   font-size: 20px;
   text-decoration: none;

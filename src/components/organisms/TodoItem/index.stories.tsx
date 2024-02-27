@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TodoItem } from '.';
+import { ToDoItem } from '.';
 
 const meta = {
-  title: 'Organisms/TodoItem',
-  component: TodoItem,
-} satisfies Meta<typeof TodoItem>;
+  title: 'Organisms/ToDoItem',
+  component: ToDoItem,
+} satisfies Meta<typeof ToDoItem>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    label: '리액트 공부하기',
+    label: 'label',
   },
 };
 

@@ -17,7 +17,7 @@ export const Default: Story = {
 };
 export const WithToDoList: Story = {
   args: {
-    toDoList: ['리액트 공부하기', 'CDD 공부하기', '할 일 목록 앱 개발하기'],
+    toDoList: [{ id: 0, text: '할 일 1'}],
   },
 };
 

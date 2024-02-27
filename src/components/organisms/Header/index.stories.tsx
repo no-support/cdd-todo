@@ -11,7 +11,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    title: '할 일 목록',
+    title: '할 일',
   },
 };
 
